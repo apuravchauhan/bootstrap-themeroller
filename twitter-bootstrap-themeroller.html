@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Twitter Bootstrap ThemeRoller</title>
+    <meta name="keywords" content="Bootstrap Themeroller, Twitter bootstrap themeroller">
+	<meta name="description" content="Bootstrap themeroller is an application that lets you create you own theme, style, look and feel for Bootstrap, from Twitter. ">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="assets/css/app.css" rel="stylesheet">
+      <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	  <link href="assets/bootstrap/css/colorpicker.css" rel="stylesheet">
+      <link rel="stylesheet/less" href="assets/bootstrap/less/bootstrap.less">
+	       
+	   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+ <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner" style="background:#222222">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="index.html" style="color:#35CDFF">Bootstrap ThemeRoller</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html" style="color:#35CDFF">Home</a></li>
+              <li><a href="#" onClick="return false;" name="downloadTheme" style="color:#35CDFF">Download current theme</a></li>
+              <li><a href="#share-modal" data-toggle="modal" style="color:#FFD74A">Share/Save Theme</a></li>
+            </ul>
+            
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span5">
+               
+                 	 <div class="sidebar-nav sidebar-nav-fixed">
+                      <div class="tabbable"> 
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Basic Settings</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Advanced Settings</a></li>
+                    </ul>
+                    <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                    	<div id="basicAccordion" class="accordion">
+          				  <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#baseColors" data-parent="#basicAccordion" data-toggle="collapse" class="accordion-toggle">
+                  Base Shades
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="baseColors" style="height: 0px;">
+                <div class="accordion-inner">
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Black</label>
+							<div data-color-format="hex" data-color="#000" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#000" less-var="@black">
+								<span class="add-on"><i style="background-color: #000"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Darker Gray</label>
+							<div data-color-format="hex" data-color="#222" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#222" less-var="@grayDarker">
+								<span class="add-on"><i style="background-color: #222"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Dark Gray</label>
+							<div data-color-format="hex" data-color="#333" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#333" less-var="@grayDark">
+								<span class="add-on"><i style="background-color: #333"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Gray</label>
+							<div data-color-format="hex" data-color="#555" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#555" less-var="@gray">
+								<span class="add-on"><i style="background-color: #555"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Light Gray</label>
+							<div data-color-format="hex" data-color="#999" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#999" less-var="@grayLight">
+								<span class="add-on"><i style="background-color: #999"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Lighter Gray</label>
+							<div data-color-format="hex" data-color="#eee" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#eee" less-var="@grayLighter">
+								<span class="add-on"><i style="background-color: #eee"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>White</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fff" less-var="@white">
+								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+                        <div class="span3">
+							<label>Blue</label>
+							<div data-color-format="hex" data-color="#049cdb" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#049cdb" less-var="@blue">
+								<span class="add-on"><i style="background-color: #049cdb"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+                 	<div class="row-fluid">
+						
+						<div class="span3">
+							<label>Dark Blue</label>
+							<div data-color-format="hex" data-color="#0064cd" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#0064cd" less-var="@blueDark">
+								<span class="add-on"><i style="background-color: #0064cd"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Green</label>
+							<div data-color-format="hex" data-color="#46a546" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#46a546" less-var="@green">
+								<span class="add-on"><i style="background-color: #46a546"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Red</label>
+							<div data-color-format="hex" data-color="#9d261d" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#9d261d" less-var="@red">
+								<span class="add-on"><i style="background-color: #9d261d"></i></span>
+							</div>
+						</div><!--/span-->
+                        <div class="span3">
+							<label>Yellow</label>
+							<div data-color-format="hex" data-color="#ffc40d" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#ffc40d" less-var="@yellow">
+								<span class="add-on"><i style="background-color: #ffc40d"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					<div class="row-fluid">
+						
+						<div class="span3">
+							<label>Orange</label>
+							<div data-color-format="hex" data-color="#f89406" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#f89406" less-var="@orange">
+								<span class="add-on"><i style="background-color: #f89406"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Pink</label>
+							<div data-color-format="hex" data-color="#c3325f" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#c3325f" less-var="@pink">
+								<span class="add-on"><i style="background-color: #c3325f"></i></span>
+							</div>
+						</div><!--/span-->
+                        <div class="span3">
+							<label>Purple</label>
+							<div data-color-format="hex" data-color="#7a43b6" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#7a43b6" less-var="@purple">
+								<span class="add-on"><i style="background-color: #7a43b6"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					
+                   </div>
+              </div>
+            </div>
+            			  
+            			  <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseFour" data-parent="#basicAccordion" data-toggle="collapse" class="accordion-toggle">
+                  Body and Fonts
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="collapseFour" style="height: 0px;">
+               <div class="accordion-inner">
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Background (Bg)</label>
+							<div data-color-format="hex" data-color="#ffffff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#ffffff" less-var="@bodyBackground">
+								<span class="add-on"><i style="background-color: #ffffff"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Link Color</label>
+							<div data-color-format="hex" data-color="#08c" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#08c" less-var="@linkColor">
+								<span class="add-on"><i style="background-color: #08c"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Text Color</label>
+							<div data-color-format="hex" data-color="#333" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#333" less-var="@textColor">
+								<span class="add-on"><i style="background-color: #333"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Heading Color</label>
+							<div data-color-format="hex" data-color="#333" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="inherit" less-var="@headingsColor">
+								<span class="add-on"><i style="background-color: #333"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Header Border</label>
+							<div data-color-format="hex" data-color="#eee" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#eee" less-var="@grayLighter">
+								<span class="add-on"><i style="background-color: #eee"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Font Size</label>
+							<input type="text" class="span12" themeroller="true" placeholder="13px" less-var="@baseFontSize">
+						</div><!--/span-->
+						<div class="span3">
+							<label>Line Height</label>
+							<input type="text" class="span12" themeroller="true" placeholder="18px" less-var="@baseLineHeight">
+						</div><!--/span-->
+						<div class="span3">
+							<label>Heading Weight</label>
+							<select class="span12" themeroller="true" less-var="@headingsFontWeight" placeholder="bold">
+                            	<option value="">bold</option>
+								<option value="bold">bold</option>
+								<option value="normal">normal</option>
+							</select>
+						</div><!--/span-->
+					</div><!--/row-->
+					<div class="row-fluid">
+						<div class="span6">
+							<label>Font Family</label>
+							<input type="text" class="span12" themeroller="true" placeholder="'Helvetica Neue', Helvetica, Arial, sans-serif" less-var="@baseFontFamily">
+						</div><!--/span-->
+						<div class="span6">
+							<label>Heading Font Family</label>
+							<input type="text" class="span12" themeroller="true" placeholder="'Helvetica Neue', Helvetica, Arial, sans-serif" less-var="@headingsFontFamily">
+						</div><!--/span-->
+					</div><!--/row-->
+				  </div>
+              </div>
+            </div>
+            			  <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#formsAccordion" data-parent="#basicAccordion" data-toggle="collapse" class="accordion-toggle">
+                  Forms & Miscellaneous
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="formsAccordion" style="height: 0px;">
+               <div class="accordion-inner">
+					<div class="row-fluid">
+                   		 <div class="span3">
+							<label>Input Bg</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fff" less-var="@inputBackground">
+								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+                        <div class="span3">
+							<label>Input Border</label>
+							<div data-color-format="hex" data-color="#ccc" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#ccc" less-var="@inputBorder">
+								<span class="add-on"><i style="background-color: #ccc"></i></span>
+							</div>
+						</div><!--/span-->
+                        <div class="span3">
+							<label>Input Radius</label>
+							<input type="text" class="span12" themeroller="true" placeholder="3px" less-var="@inputBorderRadius">
+						</div><!--/span-->
+						<div class="span3">
+							<label>Input Disabled Bg</label>
+							<div data-color-format="hex" data-color="#eee" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#eee" less-var="@inputDisabledBackground">
+								<span class="add-on"><i style="background-color: #eee"></i></span>
+							</div>
+						</div><!--/span-->
+						
+					</div><!--/row-->
+					<div class="row-fluid">
+                   		 <div class="span3">
+							<label>Form Action Bg</label>
+							<div data-color-format="hex" data-color="#f5f5f5" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#f5f5f5" less-var="@formActionsBackground">
+								<span class="add-on"><i style="background-color: #f5f5f5"></i></span>
+							</div>
+						</div><!--/span-->
+                        <div class="span3">
+							<label>HR Border</label>
+							<div data-color-format="hex" data-color="#ccc" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#ccc" less-var="@inputBorder">
+								<span class="add-on"><i style="background-color: #ccc"></i></span>
+							</div>
+						</div><!--/span-->
+                        
+						
+					</div><!--/row-->
+				  </div>
+              </div>
+            </div>
+            
+            
+            
+          </div>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                    	<div id="accordion2" class="accordion">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                  Buttons
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="collapseOne" style="height: 0px;">
+                <div class="accordion-inner">
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Info Bg</label>
+							<div data-color-format="hex" data-color="#5bc0de" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#5bc0de" less-var="@btnInfoBackground">
+								<span class="add-on"><i style="background-color: #5bc0de"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Info Highlight</label>
+							<div data-color-format="hex" data-color="#2f96b4" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#2f96b4" less-var="@btnInfoBackgroundHighlight">
+								<span class="add-on"><i style="background-color: #2f96b4"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Success Bg</label>
+							<div data-color-format="hex" data-color="#62c462" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#62c462" less-var="@btnSuccessBackground">
+								<span class="add-on"><i style="background-color: #62c462"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Success Highlight</label>
+							<div data-color-format="hex" data-color="#51a351" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#51a351" less-var="@btnSuccessBackgroundHighlight">
+								<span class="add-on"><i style="background-color: #51a351"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Danger Bg</label>
+							<div data-color-format="hex" data-color="#ee5f5b" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#ee5f5b" less-var="@btnDangerBackground">
+								<span class="add-on"><i style="background-color: #ee5f5b"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Danger Highlight</label>
+							<div data-color-format="hex" data-color="#bd362f" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#bd362f" less-var="@btnDangerBackgroundHighlight">
+								<span class="add-on"><i style="background-color: #bd362f"></i></span>
+							</div>
+						</div><!--/span-->
+                        	<div class="span3">
+							<label>Inverse Bg</label>
+							<div data-color-format="hex" data-color="#555" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#555" less-var="@btnInverseBackground">								<span class="add-on"><i style="background-color: #555"></i></span>
+							</div>
+						</div><!--/span-->
+                        	<div class="span3">
+							<label>Inverse Highlight</label>
+							<div data-color-format="hex" data-color="#222" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#222" less-var="@btnInverseBackgroundHighlight">
+								<span class="add-on"><i style="background-color: #222"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+                    <div class="row-fluid">
+						<div class="span3">
+							<label>Warning Bg</label>
+							<div data-color-format="hex" data-color="#fcb44d" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fcb44d" less-var="@btnWarningBackground">
+								<span class="add-on"><i style="background-color: #fcb44d"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Warning Highlight</label>
+							<div data-color-format="hex" data-color="#f89406" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#f89406" less-var="@btnWarningBackgroundHighlight">
+								<span class="add-on"><i style="background-color: #f89406"></i></span>
+							</div>
+						</div><!--/span-->
+                        	<div class="span3">
+							<label>Default Bg</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fff" less-var="@btnBackground">								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+                        	<div class="span3">
+							<label>Default Highlight</label>
+							<div data-color-format="hex" data-color="#e6e6e6" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#e6e6e6" less-var="@btnBackgroundHighlight">
+								<span class="add-on"><i style="background-color: #e6e6e6"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					
+                   </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseTwo" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                 Form States and Alerts
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="collapseTwo" style="height: 0px;">
+                <div class="accordion-inner">
+                 <div class="row-fluid">
+					 
+				     	<div class="span3">
+							<label>Warning Text</label>
+							<div data-color-format="hex" data-color="#c09853" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#c09853" less-var="@warningText">
+								<span class="add-on"><i style="background-color: #c09853"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Warning Bg</label>
+							<div data-color-format="hex" data-color="#fcf8e3" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fcf8e3" less-var="@warningBackground">
+								<span class="add-on"><i style="background-color: #fcf8e3"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Error Text</label>
+							<div data-color-format="hex" data-color="#b94a48" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#b94a48" less-var="@errorText">
+								<span class="add-on"><i style="background-color: #b94a48"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Error Bg</label>
+							<div data-color-format="hex" data-color="#f2dede" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#f2dede" less-var="@errorBackground">
+								<span class="add-on"><i style="background-color: #f2dede"></i></span>
+							</div>
+						</div><!--/span-->
+					</div>
+					<div class="row-fluid">
+					   	<div class="span3">
+							<label>Success Text</label>
+							<div data-color-format="hex" data-color="#468847" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#468847" less-var="@successText">
+								<span class="add-on"><i style="background-color: #468847"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Success Bg</label>
+							<div data-color-format="hex" data-color="#dff0d8" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#dff0d8" less-var="@successBackground">
+								<span class="add-on"><i style="background-color: #dff0d8"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Info Text</label>
+							<div data-color-format="hex" data-color="#3a87ad" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#3a87ad" less-var="@infoText">
+								<span class="add-on"><i style="background-color: #3a87ad"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Info Bg</label>
+							<div data-color-format="hex" data-color="#d9edf7" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#d9edf7" less-var="@infoBackground">
+								<span class="add-on"><i style="background-color: #d9edf7"></i></span>
+							</div>
+						</div><!--/span-->
+					</div>
+					
+				   </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseThree" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                  Table Settings
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="collapseThree" style="height: 0px;">
+               <div class="accordion-inner">
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Table Bg</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="transparent" less-var="@tableBackground">
+								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Bg Accent</label>
+							<div data-color-format="hex" data-color="#f9f9f9" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#f9f9f9" less-var="@tableBackgroundAccent">
+								<span class="add-on"><i style="background-color: #f9f9f9"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Bg Hover</label>
+							<div data-color-format="hex" data-color="#f5f5f5" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#f5f5f5" less-var="@tableBackgroundHover">
+								<span class="add-on"><i style="background-color: #f5f5f5"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Border</label>
+							<div data-color-format="hex" data-color="#ddd" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#ddd" less-var="@tableBorder">
+								<span class="add-on"><i style="background-color: #ddd"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					
+				  </div>
+              </div>
+            </div>
+            
+            
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseNavbar" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                  Navbar
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="collapseNavbar" style="height: 0px;">
+               <div class="accordion-inner">
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Height</label>
+							<input type="text" class="span12" themeroller="true" placeholder="40px" less-var="@navbarHeight">
+						</div><!--/span-->
+						<div class="span3">
+							<label>Background</label>
+							<div data-color-format="hex" data-color="#222" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#222" less-var="@navbarBackground">
+								<span class="add-on"><i style="background-color: #222"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Highlight</label>
+							<div data-color-format="hex" data-color="#333" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#333" less-var="@navbarBackgroundHighlight">
+								<span class="add-on"><i style="background-color: #333"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Text</label>
+							<div data-color-format="hex" data-color="#999" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#999" less-var="@navbarText">
+								<span class="add-on"><i style="background-color: #999"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					<div class="row-fluid">
+						
+						<div class="span3">
+							<label>Link</label>
+							<div data-color-format="hex" data-color="#999" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#999" less-var="@navbarLinkColor">
+								<span class="add-on"><i style="background-color: #999"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Link Hover</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fff" less-var="@navbarLinkColorHover">
+								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Link Active</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fff" less-var="@navbarLinkColorActive">
+								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Link Bg Hover</label>
+							<div data-color-format="hex" data-color="#2c2c2c" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="transparent" less-var="@navbarLinkBackgroundHover">
+								<span class="add-on"><i style="background-color: #2c2c2c"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+					<div class="row-fluid">
+						
+						<div class="span3">
+							<label>Link Bg Active</label>
+							<div data-color-format="hex" data-color="#222" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#222" less-var="@navbarLinkBackgroundActive">
+								<span class="add-on"><i style="background-color: #222"></i></span>
+							</div>
+						</div><!--/span-->
+							<div class="span3">
+							<label>Search Bg Focus</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fff" less-var="@navbarSearchBackgroundFocus">
+								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Placeholder</label>
+							<div data-color-format="hex" data-color="#ccc" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#ccc" less-var="@navbarSearchPlaceholderColor">
+								<span class="add-on"><i style="background-color: #ccc"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Brand Color</label>
+							<div data-color-format="hex" data-color="#999" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#999" less-var="@navbarBrandColor">
+								<span class="add-on"><i style="background-color: #999"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+						<div class="row-fluid">
+					
+						
+					</div><!--/row-->
+				  </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseDropdown" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                  Dropdown
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="collapseDropdown" style="height: 0px;">
+               <div class="accordion-inner">
+					<div class="row-fluid">
+						<div class="span3">
+							<label>Background</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fff" less-var="@dropdownBackground">
+								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+						<div class="span3">
+							<label>Link</label>
+							<div data-color-format="hex" data-color="#333" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#333" less-var="@dropdownLinkColor">
+								<span class="add-on"><i style="background-color: #333"></i></span>
+							</div>
+						</div><!--/span-->
+                        <div class="span3">
+							<label>Link Hover</label>
+							<div data-color-format="hex" data-color="#fff" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder="#fff" less-var="@dropdownLinkColorHover">
+								<span class="add-on"><i style="background-color: #fff"></i></span>
+							</div>
+						</div><!--/span-->
+                        <div class="span3">
+							<label>Link Bg Hover</label>
+							<div data-color-format="hex" data-color=" #08c" class="input-append color">
+								<input type="text" class="span9" style="float:left" placeholder=" #08c" less-var="@dropdownLinkBackgroundHover">
+								<span class="add-on"><i style="background-color:  #08c"></i></span>
+							</div>
+						</div><!--/span-->
+					</div><!--/row-->
+				  </div>
+              </div>
+            </div>
+          </div>
+                    </div><!-- /tab2 -->
+                    </div>
+                  </div>
+				  		
+					</div>
+                </div>
+			<div class="span7">
+            		<div class="row-fluid">
+								<div class="page-header">
+									<h3>Navbar</h3>
+								</div>
+								<div class="navbar">
+                                        <div class="navbar-inner">
+                                          <div class="container">
+                                            <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                              <span class="icon-bar"></span>
+                                            </a>
+                                            <a href="#" onClick="return false;" class="brand">Project name</a>
+                                            <div class="nav-collapse">
+                                              <ul class="nav">
+                                                <li class="active"><a href="#" onClick="return false;">Home</a></li>
+                                                <li><a href="#" onClick="return false;">Link</a></li>
+                                                <li class="dropdown">
+                                                  <a data-toggle="dropdown" class="dropdown-toggle" href="#" onClick="return false;">Dropdown <b class="caret"></b></a>
+                                                  <ul class="dropdown-menu">
+                                                    <li><a href="#" onClick="return false;">Action</a></li>
+                                                    <li><a href="#" onClick="return false;">Another action</a></li>
+                                                    <li><a href="#" onClick="return false;">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li class="nav-header">Nav header</li>
+                                                    <li><a href="#" onClick="return false;">Separated link</a></li>
+                                                    <li><a href="#" onClick="return false;">One more separated link</a></li>
+                                                  </ul>
+                                                </li>
+                                              </ul>
+                                              <form action="" class="navbar-search pull-right">
+                                                <input type="text" placeholder="Search" class="search-query span12">
+                                              </form>
+                                            </div><!-- /.nav-collapse -->
+                                          </div>
+                                        </div><!-- /navbar-inner -->
+                                      </div>
+								
+							</div><!--/row-fluid-->
+					<div class="row-fluid">
+						<div class="span6">
+							<div class="page-header">
+								<h3>Buttons, Labels & Badges</h3>
+							</div>
+							
+								<button style="margin:1px" href="#" onClick="return false;" class="btn">Default</button>
+								<button style="margin:1px" href="#" onClick="return false;" class="btn btn-primary">Primary</button>
+								<button style="margin:1px" href="#" onClick="return false;" class="btn btn-info">Info</button>
+								<button style="margin:1px" href="#" onClick="return false;" class="btn btn-success">Success</button>
+                                <button style="margin:1px" href="#" onClick="return false;" class="btn btn-warning">Warning</button>
+								<button style="margin:1px" href="#" onClick="return false;" class="btn btn-danger">Danger</button>
+								<button style="margin:1px" href="#" onClick="return false;" class="btn btn-inverse">Inverse</button>  
+                                <hr/>
+                                <span class="label">Default</span>
+                                <span class="label label-success">Success</span>
+                                <span class="label label-warning">Warning</span>
+                                <span class="label label-important">Important</span>
+                                <span class="label label-info">Info</span>
+                                <span class="label label-inverse">Inverse</span>
+                                <hr/>
+                                <span class="badge">1</span>
+                                <span class="badge badge-success">2</span>
+                                <span class="badge badge-warning">4</span>
+                                <span class="badge badge-important">6</span>
+                                <span class="badge badge-info">8</span>
+                                <span class="badge badge-inverse">10</span>
+                                    
+							
+						</div>
+						<div class="span6">
+							<div class="page-header">
+								<h3>Tables</h3>
+							</div>
+						
+								<table class="table table-bordered table-striped">
+									<thead>
+									  <tr>
+										<th>First Name</th>
+										<th>Last Name</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>
+										  Apurav
+										</td>
+										<td>
+										 Chauhan
+										</td>
+									  </tr>
+									  <tr>
+										<td>
+										  Hardev
+										</td>
+										<td>
+										 Singh
+										</td>
+									  </tr>
+									  <tr>
+										<td>
+										  Manya
+										</td>
+										<td>
+										  Thakur
+										</td>
+									  </tr>
+									  </tbody>
+								 </table>
+						</div><!--span ends-->
+						   
+					</div><!--row-fluid ends-->
+					<div class="row-fluid">
+					<div class="span6">
+						<div class="page-header">
+							<h3>Form & Form States</h3>
+						</div>
+						
+						<form class="form-horizontal">
+							<fieldset>
+                            	<div class="control-group">
+                                    <label for="input01" class="control-label">Text input</label>
+                                    <div class="controls">
+                                      <input type="text" id="input01" class="span6">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label">Readonly input</label>
+                                    <div class="controls">
+                                      <span class="uneditable-input">Chauhan..</span>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label for="disabledInput" class="control-label">Disabled input</label>
+                                    <div class="controls">
+                                      <input type="text" disabled="" placeholder="Apurav..." id="disabledInput" class="span6 disabled">
+                                    </div>
+                               </div>
+                               <div class="control-group">
+                                <label for="optionsCheckbox2" class="control-label">Checkboxes</label>
+                                <div class="controls">
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" value="option1" id="optionsCheckbox2">
+                                    Normal
+                                  </label>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" disabled="" value="option1" id="optionsCheckbox2">
+                                    Disabled
+                                  </label>
+                                </div>
+                               
+                              </div>
+							   <div class="control-group warning">
+								<label class="control-label" for="inputWarning">Input with warning</label>
+								<div class="controls">
+								  <input id="inputWarning" type="text" class="span6">
+								  <span class="help-inline">Warning</span>
+								</div>
+							  </div>
+							  <div class="control-group error">
+								<label class="control-label" for="inputError">Input with error</label>
+								<div class="controls">
+								  <input id="inputError" type="text" class="span6">
+								  <span class="help-inline">Error text</span>
+								</div>
+							  </div>
+							  <div class="control-group success">
+								<label class="control-label" for="inputSuccess">Input with success</label>
+								<div class="controls">
+								  <input id="inputSuccess" type="text" class="span6">
+								  <span class="help-inline">Woohoo!</span>
+								</div>
+							  </div>
+							  <div class="control-group success">
+								<label class="control-label" for="selectError">Select with success</label>
+								<div class="controls">
+								  <select id="selectError" class="span6">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								  </select>
+								  <span class="help-inline">Woohoo!</span>
+								</div>
+							  </div>
+                              <div class="form-actions">
+                                <input class="btn btn-primary" type="button" value="Save changes"/>
+                                <input class="btn" type="button" value="Cancel"/>
+                              </div>
+							</fieldset>
+						  </form>
+						  
+					</div><!--span6 ends-->
+					<div class="span6">
+                    	<div class="row-fluid">
+                            <div class="page-header">
+                                <h3>Alerts</h3>
+                            </div>
+                            <div class="alert alert-block">
+                                <button data-dismiss="alert" class="close">×</button>
+                                <h4 class="alert-heading">Warning !</h4>
+                                <p>Best check yo self, you're not looking too good.</p>
+                            </div>
+                            <div class="alert alert-error">
+                                <button data-dismiss="alert" class="close">×</button>
+                                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                            </div>
+                            <div class="alert alert-success">
+                                <button data-dismiss="alert" class="close">×</button>
+                                <strong>Well done!</strong> You successfully read this important alert message.
+                            </div>
+                             <div class="alert alert-info">
+                                <button data-dismiss="alert" class="close">×</button>
+                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                             </div>
+                        </div><!--/row-fluid -->
+                        <div class="row-fluid">
+                        	<div class="page-header">
+                                <h3>Dropdowns</h3>
+                            </div>
+                            <div class="btn-toolbar">
+                                <div class="btn-group">
+                                  <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#" onClick="return false;">Action</a></li>
+                                    <li><a href="#" onClick="return false;">Another action</a></li>
+                                    <li><a href="#" onClick="return false;">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" onClick="return false;">Separated link</a></li>
+                                  </ul>
+                                </div><!-- /btn-group -->
+                                <div class="btn-group">
+                                  <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#" onClick="return false;">Action</a></li>
+                                    <li><a href="#" onClick="return false;">Another action</a></li>
+                                    <li><a href="#" onClick="return false;">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" onClick="return false;">Separated link</a></li>
+                                  </ul>
+                                </div><!-- /btn-group -->
+                                <div class="btn-group">
+                                  <button data-toggle="dropdown" class="btn btn-danger dropdown-toggle">Danger <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#" onClick="return false;">Action</a></li>
+                                    <li><a href="#" onClick="return false;">Another action</a></li>
+                                    <li><a href="#" onClick="return false;">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" onClick="return false;">Separated link</a></li>
+                                  </ul>
+                                </div><!-- /btn-group -->
+                                <div class="btn-group">
+                                  <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Warning <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#" onClick="return false;">Action</a></li>
+                                    <li><a href="#" onClick="return false;">Another action</a></li>
+                                    <li><a href="#" onClick="return false;">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" onClick="return false;">Separated link</a></li>
+                                  </ul>
+                                </div><!-- /btn-group -->
+                                <div class="btn-group">
+                                  <button data-toggle="dropdown" class="btn btn-success dropdown-toggle">Success <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#" onClick="return false;">Action</a></li>
+                                    <li><a href="#" onClick="return false;">Another action</a></li>
+                                    <li><a href="#" onClick="return false;">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" onClick="return false;">Separated link</a></li>
+                                  </ul>
+                                </div><!-- /btn-group -->
+                                <div class="btn-group">
+                                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">Info <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#" onClick="return false;">Action</a></li>
+                                    <li><a href="#" onClick="return false;">Another action</a></li>
+                                    <li><a href="#" onClick="return false;">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" onClick="return false;">Separated link</a></li>
+                                  </ul>
+                                </div><!-- /btn-group -->
+                                <div class="btn-group">
+                                  <button data-toggle="dropdown" class="btn btn-inverse dropdown-toggle">Inverse <span class="caret"></span></button>
+                                  <ul class="dropdown-menu">
+                                    <li><a href="#" onClick="return false;">Action</a></li>
+                                    <li><a href="#" onClick="return false;">Another action</a></li>
+                                    <li><a href="#" onClick="return false;">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" onClick="return false;">Separated link</a></li>
+                                  </ul>
+                                </div><!-- /btn-group -->
+                              </div><!--/btn toolbar -->
+                        </div><!--/row-fluid -->
+						
+						
+					</div><!--span6 ends-->
+					</div><!--row-fluid ends-->
+                     <div class="row-fluid">
+					 <div class="span12">
+					 <hr/>
+						 <div class="download-btn">
+							<a name="downloadTheme" href="#" onClick="return false;" class="btn btn-primary">Customize and Download</a>
+						 </div>
+                     </div><!--/span12-->
+                    
+        			 </div><!--/row-fluid -->	
+                     <hr/>
+					<footer>
+						<center>
+						  <p>&copy; Apurav Chauhan 2012</p>
+						</center>
+					</footer>
+			</div>
+            
+		</div>
+       
+		
+	</div>
+	
+	<div class="modal hide fade" id="loadingModal" data-backdrop="static" data-keyboard="false">
+            <div class="modal-header">
+              <h3>Loading resources</h3>
+            </div><!--/modal-header-->
+            <div class="modal-body">
+              <div class="progress progress-success progress-striped active">
+				<div class="bar" style="width: 100%;"></div>
+			  </div>
+            </div><!--/modal-body-->
+            
+     </div>
+          
+	 <div class="modal hide fade" id="share-modal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3>Share current theme</h3>
+      </div>
+      <div class="modal-body">
+      
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+			<a class="addthis_button_preferred_1"></a>
+			<a class="addthis_button_preferred_2"></a>
+			<a class="addthis_button_preferred_3"></a>
+			<a class="addthis_button_preferred_4"></a>
+			<a class="addthis_button_compact"></a>
+			<a class="addthis_counter addthis_bubble_style"></a>
+		</div>
+		<!-- AddThis Button END -->
+      
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+      </div>
+	 </div><!--/modal-->
+
+	
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('#loadingModal').modal('show');
+		$(function(){
+			$('#loadingModal').modal('hide');
+		});
+	</script>
+	<script src="assets/bootstrap/js/bootstrap-colorpicker.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/bootstrap/less-1.3.0-pulled.js"></script>
+    <script type="text/javascript">
+		var addthis_config = {"data_track_addressbar":false, 
+										"data_track_clickback": false,
+										"description":'My custom Twitter Bootstrap theme built using Bootstrap themeroller application'
+										};
+	</script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-500bcde964bed928"></script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-33502069-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	
+</body>
+</html>
